@@ -80,4 +80,13 @@ class WidgetsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def file
+    cookies['fileDownload'] = 'true'
+
+    send_file File.join(Rails.root, 'file.txt'),
+      filename: 'downloaded-file.txt',
+      type: 'content-type',
+      x_sendfile: true
+  end
 end
