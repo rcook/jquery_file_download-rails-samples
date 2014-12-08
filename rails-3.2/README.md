@@ -1,6 +1,6 @@
 # Sample application for Rails 3.2
 
-Demonstrates how to integrate [`jquery.fileDownload`](https://github.com/johnculviner/jquery.fileDownload)
+Demonstrates how to integrate [`jquery.fileDownload.js`](https://github.com/johnculviner/jquery.fileDownload)
 into a Rails 3.2 application using the [`jquery_file_download-rails`](https://github.com/rcook/jquery_file_download-rails)
 gem.
 

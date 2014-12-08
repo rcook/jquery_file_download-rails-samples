@@ -1,6 +1,6 @@
 # Sample application for Rails 4.1
 
-Demonstrates how to integrate [`jquery.fileDownload`](https://github.com/johnculviner/jquery.fileDownload)
+Demonstrates how to integrate [`jquery.fileDownload.js`](https://github.com/johnculviner/jquery.fileDownload)
 into a Rails 4.1 application using the [`jquery_file_download-rails`](https://github.com/rcook/jquery_file_download-rails)
 gem.
 
@@ -92,7 +92,6 @@ Content for [`app/assets/javascripts/downloads.js`](https://github.com/rcook/jqu
 $(function () {
   $("#download").on("click", function (e) {
     e.preventDefault();
-    alert("Download link clicked");
     $.fileDownload($(this).prop("href"), {
       successCallback: function (url) { alert("Success"); },
       failCallback: function (url) { alert("Fail"); }
