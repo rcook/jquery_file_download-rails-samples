@@ -53,4 +53,6 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  get '/downloads/page', to: 'downloads#page'
+  get '/downloads/file', to: 'downloads#file'
 end
