@@ -2,8 +2,8 @@
 
 Sample applications demonstrating [`jquery_file_download-rails`](https://github.com/rcook/jquery_file_download-rails)
 gem for Ruby on Rails applications. This gem integrates the
-[`jquery.fileDownload.js`](https://github.com/johnculviner/jquery.fileDownload)
-package into Rails 3.1+ asset pipeline.
+[`jquery.fileDownload`](https://github.com/johnculviner/jquery.fileDownload)
+script into Rails 3.1+ asset pipeline.
 
 ## Step-by-step instructions for Rails 3.2
 
@@ -104,7 +104,7 @@ $(function () {
 Add following line to [`Gemfile`](https://github.com/rcook/jquery_file_download-rails-samples/blob/master/rails-3.2/download-demo/Gemfile):
 
 ```ruby
-gem 'jquery_file_download-rails'"
+gem 'jquery_file_download-rails'
 ```
 
 Update installed gems:
