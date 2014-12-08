@@ -92,7 +92,6 @@ Content for [`app/assets/javascripts/downloads.js`](https://github.com/rcook/jqu
 $(function () {
   $("#download").on("click", function (e) {
     e.preventDefault();
-    alert("Download link clicked");
     $.fileDownload($(this).prop("href"), {
       successCallback: function (url) { alert("Success"); },
       failCallback: function (url) { alert("Fail"); }
