@@ -4,7 +4,7 @@ Demonstrates how to integrate [`jquery.fileDownload.js`](https://github.com/john
 into a Rails 4.1 application using the [`jquery_file_download-rails`](https://github.com/rcook/jquery_file_download-rails)
 gem.
 
-The full sample application is available [here](https://github.com/rcook/jquery_file_download-rails-samples/tree/master/rails-4.1/download-demo).
+The full sample application is available [here](download-demo).
 
 ## Configuration
 
@@ -21,7 +21,7 @@ $ rails _4.1.8_ new download-demo
 
 ### 2. Configure Ruby version
 
-Content for [`.ruby-version`](https://github.com/rcook/jquery_file_download-rails-samples/blob/master/rails-4.1/download-demo/.ruby-version):
+Content for [`.ruby-version`](download-demo/.ruby-version):
 
 ```text
 2.0.0-p353
@@ -35,7 +35,7 @@ $ bundle exec rails generate controller downloads
 
 ### 4. Create sample text file
 
-Content for [`file.txt`](https://github.com/rcook/jquery_file_download-rails-samples/blob/master/rails-4.1/download-demo/file.txt):
+Content for [`file.txt`](download-demo/file.txt):
 
 ```text
 Hello world
@@ -43,7 +43,7 @@ Hello world
 
 ### 5. Create simple view with download link
 
-Content for [`app/views/downloads/page.html.erb`](https://github.com/rcook/jquery_file_download-rails-samples/blob/master/rails-4.1/download-demo/app/views/downloads/page.html.erb):
+Content for [`app/views/downloads/page.html.erb`](download-demo/app/views/downloads/page.html.erb):
 
 ```erb
 <%= link_to 'Download file', downloads_file_path, id: 'download' %>
@@ -51,7 +51,7 @@ Content for [`app/views/downloads/page.html.erb`](https://github.com/rcook/jquer
 
 ### 6. Add page and file actions to controller
 
-Content for [`app/controllers/downloads_controller.rb`](https://github.com/rcook/jquery_file_download-rails-samples/blob/master/rails-4.1/download-demo/app/controllers/downloads_controller.rb):
+Content for [`app/controllers/downloads_controller.rb`](download-demo/app/controllers/downloads_controller.rb):
 
 ```ruby
 class DownloadsController < ApplicationController
@@ -71,7 +71,7 @@ end
 
 ### 7. Add routes for new actions
 
-Add following lines to [`config/routes.rb`](https://github.com/rcook/jquery_file_download-rails-samples/blob/master/rails-4.1/download-demo/config/routes.rb):
+Add following lines to [`config/routes.rb`](download-demo/config/routes.rb):
 
 ```ruby
   get '/downloads/page', to: 'downloads#page'
@@ -86,7 +86,7 @@ Rename the file:
 $ mv app/assets/javascripts/downloads.js.coffee app/assets/javascripts/downloads.js
 ```
 
-Content for [`app/assets/javascripts/downloads.js`](https://github.com/rcook/jquery_file_download-rails-samples/blob/master/rails-4.1/download-demo/app/assets/javascripts/downloads.js):
+Content for [`app/assets/javascripts/downloads.js`](download-demo/app/assets/javascripts/downloads.js):
 
 ```javascript
 $(function () {
@@ -102,7 +102,7 @@ $(function () {
 
 ### 9. Add `jquery_file_download-rails` to `Gemfile` and update gems
 
-Add following line to [`Gemfile`](https://github.com/rcook/jquery_file_download-rails-samples/blob/master/rails-4.1/download-demo/Gemfile):
+Add following line to [`Gemfile`](download-demo/Gemfile):
 
 ```ruby
 gem 'jquery_file_download-rails'
@@ -116,7 +116,7 @@ $ bundle install
 
 ### 10. Add library to JavaScript manifest
 
-Add following line to [`app/assets/javascripts/application.js`](https://github.com/rcook/jquery_file_download-rails-samples/blob/master/rails-4.1/download-demo/app/assets/javascripts/application.js):
+Add following line to [`app/assets/javascripts/application.js`](download-demo/app/assets/javascripts/application.js):
 
 ```javascript
 //= require jquery.fileDownload

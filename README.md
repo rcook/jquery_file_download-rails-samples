@@ -7,8 +7,8 @@ script into Rails 3.1+ and Rails 4 asset pipeline.
 
 ## Step-by-step instructions
 
-* [Rails 4.1](https://github.com/rcook/jquery_file_download-rails-samples/blob/master/rails-4.1/README.md)
-* [Rails 3.2](https://github.com/rcook/jquery_file_download-rails-samples/blob/master/rails-3.2/README.md)
+* [Rails 4.1](rails-4.1/README.md)
+* [Rails 3.2](rails-3.2/README.md)
 
 ## Licence
 
