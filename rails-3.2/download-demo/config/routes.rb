@@ -60,4 +60,5 @@ DownloadDemo::Application.routes.draw do
   # match ':controller(/:action(/:id))(.:format)'
   get '/downloads/page', to: 'downloads#page'
   get '/downloads/file', to: 'downloads#file'
+  post '/widgets/file', to: 'widgets#file'
 end
